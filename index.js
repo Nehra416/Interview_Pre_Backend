@@ -12,7 +12,10 @@ Connection() // call the function
 const router = require('./Routes/InterRoutes')
 
 
-app.use(cors()); 
+app.use(cors({
+    origin: "*",
+    methods: ['GET', 'POST'],
+)); 
 // middleware to change the client data into json format and set into req.body
 app.use(express.json());
 
