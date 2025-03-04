@@ -13,7 +13,7 @@ const router = require('./Routes/InterRoutes')
 
 
 app.use(cors({
-    origin: "*",
+    origin: "https://interview-preparation-web.vercel.app",
     methods: ['GET', 'POST'],
 )); 
 // middleware to change the client data into json format and set into req.body
